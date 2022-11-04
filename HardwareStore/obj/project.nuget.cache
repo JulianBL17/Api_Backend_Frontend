@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "HLzFUit15kx3ZvY7XcID1ty5Yu72pCLTeZDtyhg9BbTqYljlwX6DgA2XiAp5h9T2CW6RMDJMBM3c8ZV+dUp/ig==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\P-FI-8\\Downloads\\hws\\HardwareStore\\HardwareStore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\P-FI-8\\.nuget\\packages\\system.net.http.json\\6.0.2-mauipre.1.22102.15\\system.net.http.json.6.0.2-mauipre.1.22102.15.nupkg.sha512",
+    "C:\\Users\\P-FI-8\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.2-mauipre.1.22102.15\\system.runtime.compilerservices.unsafe.6.0.2-mauipre.1.22102.15.nupkg.sha512",
+    "C:\\Users\\P-FI-8\\.nuget\\packages\\system.text.encodings.web\\6.0.2-mauipre.1.22102.15\\system.text.encodings.web.6.0.2-mauipre.1.22102.15.nupkg.sha512",
+    "C:\\Users\\P-FI-8\\.nuget\\packages\\system.text.json\\6.0.2-mauipre.1.22102.15\\system.text.json.6.0.2-mauipre.1.22102.15.nupkg.sha512"
+  ],
+  "logs": []
+}

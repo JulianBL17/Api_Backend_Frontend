@@ -1,0 +1,58 @@
+﻿@page "/fetchtools"
+
+@using HardwareStore.Models
+@using HardwareStore.Services
+@inject IToolService _toolService
+
+<div class="card">
+
+    <div class="card-header">
+        <h1>HardwareStore - List</h1>
+    </div>
+
+    <div class="card-body">
+        @if (tools.Count == 0)
+        {
+            <button class="btn btn-primary" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                <span class="visually-hidden">Loading...</span>
+            </button>
+        }
+        else
+        {
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var tool in tools)
+                    {
+                        <tr>
+                            <td>@tool.Id</td>
+                            <td>@tool.Name</td>
+                            <td>@tool.Price</td>
+                            <td>@tool.Description</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>
+
+@code {
+    private List<Tool> tools = new List<Tool>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        tools = await _toolService.getTools();
+    }
+
+    
+}
